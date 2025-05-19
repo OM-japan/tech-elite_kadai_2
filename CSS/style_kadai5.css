@@ -342,6 +342,9 @@ body{
     pointer-events: all;
     cursor: pointer;
 } 
+.Form-Btn:hover{
+    opacity: 0.5;
+}
 
 .footer{
     margin-top: 24px;
@@ -402,6 +405,9 @@ body{
     font-size: 16px;
     cursor: pointer;
 }
+.confirm_row button:hover{
+    opacity: 0.5;
+}
 
 .confirm_row a{
     min-width: 50px;
@@ -417,6 +423,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.confirm_row a:hover{
+    opacity: 0.5;
 }
 
 
