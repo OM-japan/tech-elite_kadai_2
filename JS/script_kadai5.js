@@ -104,3 +104,31 @@ $("form").on("input" , function(){
     $(".Form-Btn ").removeClass("enable");
   }
 })
+
+$("body").on("click" , "#back" , function(){
+  const name_value = $("textarea[name='name']").val();
+  const seat_value = $("textarea[name='seat']").val();
+  const email_value = $("textarea[name='email']").val();
+  const tel_value = $("textarea[name='tel']").val();
+  sessionStorage.setItem('name', name_value);
+  sessionStorage.setItem('seat', seat_value);
+  sessionStorage.setItem('email', email_value);
+  sessionStorage.setItem('tel', tel_value);
+});
+
+$(function() {
+  if (sessionStorage.getItem('name')) {
+    const name = sessionStorage.getItem('name');
+    const seat = sessionStorage.getItem('seat');
+    const email = sessionStorage.getItem('email');
+    const tel = sessionStorage.getItem('tel');
+    if (name) {
+      $("input[name='name']").val(name);
+      $("select[name='seat']").val(seat);
+      $("input[name='email']").val(email);
+      $("input[name='tel']").val(tel);
+      sessionStorage.clear(); 
+      $(".Form-Btn ").addClass("enable");
+    }
+  }
+});
