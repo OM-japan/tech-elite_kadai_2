@@ -63,7 +63,8 @@ body{
 .header_menu{
     display: none;
     border-top: 1px white solid;
-    }
+    padding: 16px 0;
+}
 .header_title{
     width: 50%;
     display: flex;
@@ -388,6 +389,7 @@ body{
     width: 40%;
     max-width: 300px;
     margin-left: 10px;
+    word-wrap: break-word;
 }
 
 .confirm_row textarea{

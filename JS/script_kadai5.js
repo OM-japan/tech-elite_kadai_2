@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper', {
     // 基本的な設定
     centeredSlides: true, // アクティブなスライドを中央にする
-    slidesPerView: 1,// 次のスライドを少し見せる
+    slidesPerView: 1.1,// 次のスライドを少し見せる
     spaceBetween: 10, // スライド間の距離
     loop: true, // ループさせる
     pagination: {
@@ -53,11 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
       nextEl: '.swiper-button-next', // 次へボタン
       prevEl: '.swiper-button-prev', // 前へボタン
     },
-    breakpoints: {
-    // スライドの表示枚数：650px以上の場合
-    650: {
-      slidesPerView: 1.1,
-    }}
   });
 });
 
